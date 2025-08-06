@@ -42,6 +42,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
+          npx gh-pages -d build
           git config --global user.name "chaitu73"
           git config --global user.email "chaitanyakumarreddykallam394@gmail.com"
           npm install -g gh-pages
