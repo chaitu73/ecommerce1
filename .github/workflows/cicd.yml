@@ -40,7 +40,7 @@ jobs:
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npx gh-pages -d build
           git config --global user.name "chaitu73"
