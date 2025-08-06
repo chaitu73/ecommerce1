@@ -22,7 +22,7 @@ function App() {
   
   return (
     <>
-    <Router basename="/S219_CICD">
+   <BrowserRouter basename="/ecommerce1">
       <Routes>
         <Route path="/" element={<HomePage />}>
           <Route index element={<AboutUs />} />
@@ -40,7 +40,7 @@ function App() {
           <Route path="orders" element={<Orders />} />
         </Route>
       </Routes>
-    </Router>
+    </BrowserRouter>
     </>
   )
 }
